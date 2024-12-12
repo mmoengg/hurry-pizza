@@ -1,0 +1,30 @@
+.container__message {
+	position: fixed;
+	z-index: 9999;
+	top: 100px;
+	right: 100px;
+	/* width: 200px;
+	height: 200px; */
+}
+.wrap__message {
+	position: relative;
+	padding: 20px 40px;
+	color: #fff;
+	background-color: #2eb853;
+	border-radius: 100px;
+	font-size: 43px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.wrap__message::after {
+	content: '';
+	position: absolute;
+	top: calc(50% - 20px); /* 부모 요소의 중간에 위치 */
+	right: -50px; /* 부모 요소의 오른쪽에 위치 */
+	/* width: 5px; */
+	border-width: 20px 30px; /* 꽁지의 크기 */
+	border-style: solid;
+	border-color: transparent transparent transparent #2eb853; /* 오른쪽은 흰색, 나머지는 투명 */
+}
