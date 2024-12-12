@@ -1,24 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 .container__message {
 	position: fixed;
 	z-index: 9999;
 	top: 100px;
 	right: 100px;
-	/* width: 200px;
-	height: 200px; */
 }
-.wrap__message {
+.container__message .wrap__message {
 	position: relative;
+	width: 270px;
+	height: 90px;
 	padding: 20px 40px;
 	color: #fff;
 	background-color: #2eb853;
 	border-radius: 100px;
 	font-size: 43px;
 	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.wrap__message::after {
+.container__message .wrap__message::after {
 	content: '';
 	position: absolute;
 	top: calc(50% - 20px); /* 부모 요소의 중간에 위치 */
