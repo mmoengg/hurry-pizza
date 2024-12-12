@@ -1,15 +1,15 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-.container__message {
+.container__message--side-pizza {
 	position: fixed;
 	z-index: 9999;
 	top: 100px;
-	right: 100px;
+	right: 60px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
-.container__message .wrap__message {
+.container__message--side-pizza .wrap__message {
 	position: relative;
 	width: 270px;
 	height: 90px;
@@ -23,8 +23,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	box-sizing: border-box;
 }
-.container__message .wrap__message::after {
+.container__message--side-pizza .wrap__message::after {
 	content: '';
 	position: absolute;
 	top: calc(50% - 20px); /* 부모 요소의 중간에 위치 */
